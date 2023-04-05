@@ -21,6 +21,7 @@ class MangaAdapter(private val context: Context, private val manga: List<Manga>,
             imgManga.setImageResource(manga.imgManga)
             nameManga.text = manga.nameManga
             descManga.text = manga.descManga
+            itemView.setOnClickListener{listener(manga)}
         }
 
     }
